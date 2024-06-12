@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ing. Candido Gilberto Garcia Castillo</title>
+    <title>Corporativo Garcia & Asociados</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,6 +34,7 @@
         }
         nav {
             background-color: #333;
+            position: relative;
         }
         nav ul {
             list-style: none;
@@ -41,8 +42,10 @@
             margin: 0;
             display: flex;
             justify-content: space-around;
+            position: relative;
         }
         nav ul li {
+            position: relative;
             margin: 0;
         }
         nav ul li a {
@@ -56,6 +59,28 @@
         nav ul li a:hover {
             background-color: #4CAF50;
             color: white;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        nav ul li ul li {
+            display: block;
+        }
+        nav ul li ul li a {
+            padding: 10px;
+            color: white;
+            text-align: left;
+        }
+        nav ul li ul li a:hover {
+            background-color: #4CAF50;
+        }
+        nav ul li:hover ul {
+            display: block;
         }
         section {
             width: 80%;
@@ -86,18 +111,14 @@
             background-color: #45a049;
         }
     </style>
-        
 </head>
 <body>
     <header>
         <div class="header-container">
-
-            <img src="https://github.com/giberto-garcia/repo.corp.garcia/blob/main/IMG_gilberto1.jpg?raw=true" alt=ggfoto>
-       
+            <img src="https://github.com/giberto-garcia/repo.corp.garcia/blob/main/IMG_gilberto1.jpg?raw=true" alt="ggfoto">
             <div>
-                <h1>Ing. Candido Gilberto Garcia Castillo      </h1>
-                <h2>Asesor de Sistemas,Inteligencia Artificial,Chatgpt </h2>
-        
+                <h1>Corporativo Garcia & Asociados</h1>
+                <h2>Asesores de Sistemas, Inteligencia Artificial, ChatGPT</h2>
             </div>
         </div>
     </header>
@@ -110,11 +131,23 @@
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#System ERP">System ERP</a></li>
+            <li>
+                <a href="#System ERP">System ERP</a>
+                <ul>
+                    <li><a href="#BPCS IBM As400">BPCS</a></li>
+                    <li><a href="#Mapics IBM As400">MAPICS</a></li>
+                    <li><a href="#SAP B1 ">SAP B1</a></li>
+                    <li><a href="#Odoo">Odoo</a></li>
+                    <li><a href="#Tulip.CO">Tulip.CO</a></li>
+                    <li><a href="#Oracle">Oracle</a></li>
+                    <li><a href="#Contpaqi">Contpaqi</a></li>
+                </ul>
+            </li>
             <li><a href="#Lenguajes de Programacion">Lenguajes de Programación</a></li>
         </ul>
     </nav>
-    <img src="C:\Users\HP\OneDrive\Imágenes\ai-6-25-18.original.jpg" alt="ai-6-25-18.original" class="intro-pic"width="1400" height="500" >
+
+    <img src="C:\Users\HP\OneDrive\Imágenes\ai-6-25-18.original.jpg" alt="ai-6-25-18.original" class="intro-pic" width="1400" height="500">
 
     <div class="container">
         <section id="sobre-mi">
@@ -159,9 +192,11 @@
         <section id="servicios">
             <h2>Servicios</h2>
             <p>Desarrollo de sistemas a la medida (mainframe o cualquier plataforma).</p>
-            <p>Interfaces entre sistemas API.</p>
+            <p>Interfaces entre sistemas (API).</p>
             <p>Aplicaciones con Inteligencia Artificial.</p>
             <p>Aplicaciones con ChatGPT.</p>
+            <p>Asesoria Legal</p>
+            <p>Contabilidad Fiscal</p>
             <p>Aplicación de robot.</p>
             <p>Cloud System (nube).</p>
             <p>Sistemas Geo_Espaciales.</p>
@@ -174,13 +209,12 @@
         
         <section id="System ERP">
             <h2>System ERP</h2>
-            <p>BPCS/MAPICS en  As400 IBM</p>
+            <p>BPCS/MAPICS IBM As400 </p>
             <p>SAP B1</p>
             <p>Odoo System</p>
             <p>Tulip.co System</p>
             <p>Oracle</p>
             <p>Contpaqi, etc</p>
-
         </section>     
 
         <section id="Lenguajes de Programacion">
@@ -202,4 +236,6 @@
 
     <footer>
         <p>&copy; 2024 Ing. Candido Gilberto Garcia Castillo. Todos los derechos reservados.</p>
-    </footer
+    </footer>
+</body>
+</html>
